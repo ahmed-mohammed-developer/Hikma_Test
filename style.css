@@ -1,0 +1,64 @@
+*{
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+}
+body {
+     font-family: "Cairo", sans-serif;
+     font-optical-sizing: auto;
+     background-color: #eee;
+}
+h1 {
+     text-align: center;
+     padding: 20px 0;
+     background-color: white;
+}
+.box{
+     margin: 40px auto 20px;
+     max-width: 600px;
+     background-color: white;
+     padding: 20px;
+     text-align: center;
+     position: relative;
+}
+.hikma-id{
+     position: absolute;
+    left: 50%;
+    top: -15px;
+    background-color: #e91e63;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+.hikma-display {
+     padding: 20px;
+     margin-bottom: 20px;
+     font-size: 25px;
+     line-height: 1.8;
+     border-bottom: 2px solid #eee;
+     position: relative;
+}
+.hikma-display::before,
+.hikma-display::after{
+     font-size: 50px;
+     position: absolute;
+     color: #aaa;
+}
+.hikma-display::before{
+     content: "‘‘";
+     top: 0;
+     left: 0;
+}
+.hikma-display::after{
+     content: "’’";
+     right: 0;
+}
+.hikma-author {
+     text-align: left;
+     margin: 0 0 20px;
+}
+.auto-status {
+     text-align: center;
+}
